@@ -6,9 +6,9 @@ if(!isset($_SESSION['unn']))
 {
 header("Location: ../index.html");
 }
-  if(isset($_REQUEST['course_id']) && $_REQUEST['course_id'] !=""){
-    $course_id= $_REQUEST['course_id'];
-    $query = "DELETE FROM coursedetails WHERE course_id =".$course_id;
+  if(isset($_REQUEST['camp_id']) && $_REQUEST['camp_id'] !=""){
+    $course_id= $_REQUEST['camp_id'];
+    $query = "DELETE FROM coursedetails WHERE camp_id =".$course_id;
     $delcouse= mysqli_query($con,$query);
     if($delcouse){
         echo "<script>window.location='assingment.php'</script>";
@@ -96,17 +96,19 @@ header("Location: ../index.html");
         <thead>
         <tr>
           <th>NO</th>
-		  <th>PLACE</th>
+		      <th>PLACE</th>
           <th>CAMP NAME</th>
+          <th>PRICE</th>
+          <th>CAMP DATE START</th>
+          <th>CAMP DATE END</th>
           <th>DETAIL</th>
-		  <th>CAMP DATE</th>
           <th>Edit</th>
           <th>Delete</th>
         </tr>
         </thead>
         <tbody>
           <?php 
-          $query = "SELECT * FROM coursedetails ORDER BY coursecode ASC";
+          $query = "SELECT * FROM coursedetails ORDER BY dateStart ASC";
           $result = mysqli_query($con,$query);
           $sn=1;
           while($row = mysqli_fetch_assoc($result)) {
@@ -114,16 +116,22 @@ header("Location: ../index.html");
           <tr>
             <td><?php echo $sn; ?></td>
 			
-			<td><?php echo $row['coursecode']; ?></td>
+		     	<td><?php echo $row['camp_venue']; ?></td>
             
-            <td><?php echo $row['course_name']; ?></td>
+            <td><?php echo $row['camp_name']; ?></td>
+
+            <td><?php echo $row['price']; ?></td>  
+
+            <td><?php echo $row['dateStart']; ?></td>
+
+            <td><?php echo $row['dateEnd']; ?></td>
         
-            <td><?php echo $row['exam_location']; ?></td>  
+            <td><?php echo $row['camp_details']; ?></td>  
 			
-			<td><?php echo $row['exam_date']; ?></td>
+			
        
-            <td><a class="navbar-buttons mbr-section-btnr" href="editAssingment.php?course_id=<?php echo $row['course_id']?>">Edit</a></td>
-            <td><a class="navbar-buttons mbr-section-btnr" href="assingment.php?course_id=<?php echo $row['course_id']?>">Delete</a></td>
+            <td><a class="navbar-buttons mbr-section-btnr" href="editAssingment.php?camp_id=<?php echo $row['camp_id']?>">Edit</a></td>
+            <td><a class="navbar-buttons mbr-section-btnr" href="assingment.php?camp_id=<?php echo $row['camp_id']?>">Delete</a></td>
           </tr>
 
       <?php 

@@ -6,7 +6,7 @@ $password = "ariffjumper";
 $database = "camp";
 
 // Create connection
-$con = new mysqli($servername, $username, $password,$database);
+$con = new mysqli($servername, $username, $password, $database);
 
 // Check connection
 if ($con->connect_error) {
