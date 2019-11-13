@@ -47,26 +47,21 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="index.html">
-                         <img src="assets/images/schoolicon.svg" alt="Mobirise" title="" style="height: 5.4rem;">
+                         <img src="assets/images/schoolicon-1-134x134.png" alt="Mobirise" title="" style="height: 5.4rem;">
                     </a>
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html"><span class="mbri-github mbr-iconfont mbr-iconfont-btn"></span>TADIKA MUHAMMADI</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html"><span class="mbri-android mbr-iconfont mbr-iconfont-btn" style="font-size: 25px;"></span>Camp Management System</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
                     <a class="nav-link link text-white display-4" href="https://mobirise.com">
                         </a>
-                </li><li class="nav-item dropdown">
-                    <a class="nav-link link text-white dropdown-toggle display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" aria-expanded="true">
-                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
-                        About Us
-                    </a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="page6.html">Headmaster's Message</a><a class="text-white dropdown-item display-4" href="page5.html" aria-expanded="false">Vision &amp; Mission</a></div>
-                </li><li class="nav-item"><a class="nav-link link text-white display-4" href="programme.html" aria-expanded="false"><span class="mbri-setting mbr-iconfont mbr-iconfont-btn"></span>
-                        Our Programme &nbsp;</a></li><li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" aria-expanded="false"><span class="mbri-touch mbr-iconfont mbr-iconfont-btn"></span>
+                </li><li class="nav-item"><a class="nav-link link text-white display-4" href="http://localhost/camp/programme.html" aria-expanded="false"><span class="mbri-setting mbr-iconfont mbr-iconfont-btn"></span>
+                        Our Camp</a></li><li class="nav-item dropdown open"><a class="nav-link link text-white dropdown-toggle display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mbri-touch mbr-iconfont mbr-iconfont-btn"></span>
                         
-                        Log in</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="teacherLogin.html">TEACHER</a><a class="text-white dropdown-item display-4" href="parentLogin.html" aria-expanded="false">PARENT</a></div></li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-secondary display-4" href="page7.html">
+                        Log in</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="http://localhost/camp/adminLogin.html">ADMIN</a><a class="text-white dropdown-item display-4" href="http://localhost/camp/parentLogin.html" aria-expanded="false">PARENT</a></div></li></ul>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-secondary display-4" href="reguser.php">
                     
                     Register<br> Now !
                 </a></div>
@@ -135,60 +130,7 @@
             </div>
 			<br><br>
     </div>
-	<section class="cid-rFn7jCBSfN mbr-reveal mbr-parallax-background" id="footer1-1c">
-
-    
-
-    <div class="mbr-overlay" style="background-color: rgb(35, 35, 35); opacity: 0.9;"></div>
-
-    <div class="container">
-        <div class="media-container-row content text-white">
-            <div class="col-12 col-md-3">
-                <div class="media-wrap">
-                    
-                        <img src="assets/images/schoolicon-1-150x135.png" alt="TADIKA MUHAMMADI" title="TADIKA MUHAMMADU">
-                    
-                </div>
-            </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <h5 class="pb-3">
-                    TADIKA MUHAMMADI SYSTEM</h5>
-                <p class="mbr-text">Tadika Muhammadi System is about enhancing the relations between the Parents and Tadika Muhammadi Teachers.&nbsp;</p>
-            </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <h5 class="pb-3">
-                    Contacts
-                </h5>
-                <p class="mbr-text">
-                    Email:<br>tadikamuhammadi@gmail.com                    <br>Phone: +(60)13-933 8856 
-                    <br>Fax: +1 (0) 000 0000 002
-                </p>
-            </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <h5 class="pb-3">&nbsp;Quick Links
-                </h5>
-                <p class="mbr-text"><a href="programme.html">About Us&nbsp;</a><br><a class="text-primary" href="programme.html">Our Programme</a><br><a class="text-primary" href="programme.html">Admin</a></p>
-            </div>
-        </div>
-        <div class="footer-lower">
-            <div class="media-container-row">
-                <div class="col-sm-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="media-container-row mbr-white">
-                <div class="col-sm-6 copyright">
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        © Copyright 2018 Tadika Muhammadi Preschool System - All Rights Reserved
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+	
 </section>
 
 

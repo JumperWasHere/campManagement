@@ -1,192 +1,32 @@
 <!DOCTYPE html>
 <html  >
 <head>
-  <!-- Site made with Mobirise Website Builder v4.10.7, https://mobirise.com -->
+  <!-- Site made with Mobirise Website Builder v4.10.10, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.10.7, mobirise.com">
+  <meta name="generator" content="Mobirise v4.10.10, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/schoolicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/schoolicon-1-134x134.png" type="image/x-icon">
   <meta name="description" content="Website Builder Description">
   
-  <title>AdminLogin</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <title>adminLogin</title>
+  <link rel="preload" as="style" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+<link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+  <link rel="preload" as="style" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="preload" as="style" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="preload" as="style" href="assets/bootstrap/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="preload" as="style" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
-  <meta charset="utf-8">
-    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
-    <title>animated sinin and signup panel. animated login and registeration page, popup,  - Bootsnipp.com</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style type="text/css">
-	
-           
-@import url('https://fonts.googleapis.com/css?family=Mukta');
-body{
-  font-family: 'Mukta', sans-serif;
-	height:100vh;
-	min-height:550px;
-	background-image: url(http://www.planwallpaper.com/static/images/Free-Wallpaper-Nature-Scenes.jpg);
-	background-repeat: no-repeat;
-	background-size:cover;
-	background-position:center;
-	position:relative;
-    overflow-y: hidden;
-}
-a{
-  text-decoration:none;
-  color:#444444;
-}
-.login-reg-panel{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-	text-align:center;
-    width:70%;
-	right:0;left:0;
-    margin:auto;
-    height:400px;
-    background-color: rgba(236, 48, 20, 0.9);
-}
-.white-panel{
-    background-color: rgba(255,255, 255, 1);
-    height:500px;
-    position:absolute;
-    top:-50px;
-    width:50%;
-    right:calc(50% - 50px);
-    transition:.3s ease-in-out;
-    z-index:0;
-    box-shadow: 0 0 15px 9px #00000096;
-}
-.login-reg-panel input[type="radio"]{
-    position:relative;
-    display:none;
-}
-.login-reg-panel{
-    color:#B8B8B8;
-}
-.login-reg-panel #label-login, 
-.login-reg-panel #label-register{
-    border:1px solid #9E9E9E;
-    padding:5px 5px;
-    width:150px;
-    display:block;
-    text-align:center;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight: 600;
-    font-size: 18px;
-}
-.login-info-box{
-    width:30%;
-    padding:0 50px;
-    top:20%;
-    left:0;
-    position:absolute;
-    text-align:left;
-}
-.register-info-box{
-    width:30%;
-    padding:0 50px;
-    top:20%;
-    right:0;
-    position:absolute;
-    text-align:left;
-    
-}
-.right-log{right:50px !important;}
-
-.login-show, 
-.register-show{
-    z-index: 1;
-    display:none;
-    opacity:0;
-    transition:0.3s ease-in-out;
-    color:#242424;
-    text-align:left;
-    padding:50px;
-}
-.show-log-panel{
-    display:block;
-    opacity:0.9;
-}
-.login-show input[type="text"], .login-show input[type="password"]{
-    width: 100%;
-    display: block;
-    margin:20px 0;
-    padding: 15px;
-    border: 1px solid #b5b5b5;
-    outline: none;
-}
-.login-show input[type="button"] {
-    max-width: 150px;
-    width: 100%;
-    background: #444444;
-    color: #f9f9f9;
-    border: none;
-    padding: 10px;
-    text-transform: uppercase;
-    border-radius: 2px;
-    float:right;
-    cursor:pointer;
-}
-.login-show a{
-    display:inline-block;
-    padding:10px 0;
-}
-
-.register-show input[type="text"], .register-show input[type="password"]{
-    width: 100%;
-    display: block;
-    margin:20px 0;
-    padding: 15px;
-    border: 1px solid #b5b5b5;
-    outline: none;
-}
-.register-show input[type="button"] {
-    max-width: 150px;
-    width: 100%;
-    background: #444444;
-    color: #f9f9f9;
-    border: none;
-    padding: 10px;
-    text-transform: uppercase;
-    border-radius: 2px;
-    float:right;
-    cursor:pointer;
-}
-.credit {
-    position:absolute;
-    bottom:10px;
-    left:10px;
-    color: #3B3B25;
-    margin: 0;
-    padding: 0;
-    font-family: Arial,sans-serif;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    z-index: 99;
-}
-a{
-  text-decoration:none;
-  color:#2c7715;
-}
-    
-    
-    
-    </style>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
   
 </head>
 <body>
@@ -207,104 +47,88 @@ a{
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="index.html">
-                         <img src="assets/images/schoolicon.svg" alt="Mobirise" title="" style="height: 5.4rem;">
+                         <img src="assets/images/schoolicon-1-134x134.png" alt="Mobirise" title="" style="height: 5.4rem;">
                     </a>
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html"><span class="mbri-github mbr-iconfont mbr-iconfont-btn"></span>TADIKA MUHAMMADI</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html"><span class="mbri-android mbr-iconfont mbr-iconfont-btn" style="font-size: 25px;"></span>Camp Management System</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
                     <a class="nav-link link text-white display-4" href="https://mobirise.com">
                         </a>
-                </li><li class="nav-item dropdown">
-                    <a class="nav-link link text-white dropdown-toggle display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" aria-expanded="false">
-                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
-                        About Us
-                    </a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="https://mobirise.com">Headmaster's Message</a><a class="text-white dropdown-item display-4" href="https://mobirise.com" aria-expanded="false">Vision &amp; Mission</a></div>
-                </li><li class="nav-item"><a class="nav-link link text-white display-4" href="programme.html" aria-expanded="false"><span class="mbri-setting mbr-iconfont mbr-iconfont-btn"></span>
-                        Our Programme &nbsp;</a></li><li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" aria-expanded="false"><span class="mbri-touch mbr-iconfont mbr-iconfont-btn"></span>
+                </li><li class="nav-item"><a class="nav-link link text-white display-4" href="http://localhost/camp/programme.html" aria-expanded="false"><span class="mbri-setting mbr-iconfont mbr-iconfont-btn"></span>
+                        Our Camp</a></li><li class="nav-item dropdown open"><a class="nav-link link text-white dropdown-toggle display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mbri-touch mbr-iconfont mbr-iconfont-btn"></span>
                         
-                        Sign in</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="teacherLogin.html">TEACHER</a><a class="text-white dropdown-item display-4" href="parentLogin.html" aria-expanded="false">PARENT</a><a class="text-white dropdown-item display-4" href="adminLogin.html" aria-expanded="false">ADMIN</a></div></li></ul>
-            
+                        Log in</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="http://localhost/camp/adminLogin.html">ADMIN</a><a class="text-white dropdown-item display-4" href="http://localhost/camp/parentLogin.html" aria-expanded="false">PARENT</a></div></li></ul>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-secondary display-4" href="reguser.php">
+                    
+                    Register<br> Now !
+                </a></div>
         </div>
     </nav>
 </section>
 
-
+<section class="engine"><a href="https://mobirise.info/q">responsive website templates</a></section>
+<center><section align="right" class="header15 cid-rGfzNaKCuA mbr-parallax-background" id="header15-22">
+<br><br><br><br><br>
     
-<br><br><br>
-<div class="login-reg-panel">
 
-		<div class="login-info-box">
-		
-			<h2>Have an account?</h2>
-			<p>Plaese log in your account</p>
-			<label id="label-register" for="log-reg-show">Login</label>
-			<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
-		</div>
+    <center><div class="mbr-overlay" style="opacity: 0.1; background-color: rgb(7, 59, 76);"></div>
+
+   <div align="right" class="container ">
+        <div class="row">
+            
+            <div class="col-lg-4 col-md-5">
+                <div class="form-container">
+                    <div class="form-group" >
+                        <!---Formbuilder Form--->
+                        <form action="PHP/validationteacher.php" method="POST" class="mbr-form form-with-styler" role="form">
+                            <div class="dragArea row">
+                                
+                                <div class="col-md-12 form-group " data-for="email"><h5 class="text-white">Username<h5>
+                                    <input type="text" name="name" placeholder="Username" required="required" class="form-control px-3 display-7" id="email-header15-22">
+                                </div>
+								
+                                <div data-for="password" class="col-md-12 form-group "><h5 class="text-white">Password<h5>
+                                    <input type="password" name="password" placeholder="Password" required="required" class="form-control px-3 display-7" id="phone-header15-22">
+                                </div>
+                                
+                                <div class="col-md-12 input-group-btn"><button type="submit" class="btn btn-form btn-secondary-outline display-4">Log in</button>
 							
-		<div class="register-info-box">
-			<h2>Don't have an account?</h2>
-			<p>Please Register to continue using the system</p>
-			<label id="label-login" for="log-login-show">Register</label>
-			<input type="radio" name="active-log-panel" id="log-login-show">
-		</div>
-							
-		<div class="white-panel">
-		
-    	<div class="form-group">
-		<form action="PHP/validation.php" method="post" class="form-horizontal" role="form">
-			<div class="login-show">
-				<h2>LOGIN</h2>
-				<input type="text" id="userID" name="name" placeholder="Enter username" placeholder="Username" required="required">
-				<input type="password" class="form-control" id="password" name="password" placeholder="Enter Password"  required="required">
-				<button type="submit" class="button">Submit</button>
-				<a href="">Forgot password?</a>
-		</form>
-				
-			</div>
-			<div class="register-show">
-				<h2>REGISTER</h2>
-				
-				<input type="text" placeholder="Email">
-				<input type="password" placeholder="Password">
-				<input type="password" placeholder="Confirm Password">
-				<button type="submit" class="button">Submit</button>
-			</div>
-		</div>
-		
-	</div>
-<script type="text/javascript">
+								
+                            </div>
+								
+                            </div>
+                        </form><!---Formbuilder Form--->
+                    </div>
+                </div>
+            </div>
+			<br>
+			 <div align="left" class="mbr-white col-lg-8 col-md-7 content-container">
+                <h3 class="mbr-section-title mbr-bold pb-0 mbr-fonts-style display-2"><span style="font-weight: normal;"><a href="#" class="text-warning">Admin Log in To Camp Management System</a></span></h3>
+                <p class="mbr-text pb-3 mbr-fonts-style display-5"><em>
+                    Please Login to continue using the system</em>
+					</p>
+            </div>
+        </div>
+    </div>
+    
+</section>
 
-    $(document).ready(function(){
-    $('.login-info-box').fadeOut();
-    $('.login-show').addClass('show-log-panel');
-});
-
-
-$('.login-reg-panel input[type="radio"]').on('change', function() {
-    if($('#log-login-show').is(':checked')) {
-        $('.register-info-box').fadeOut(); 
-        $('.login-info-box').fadeIn();
-        
-        $('.white-panel').addClass('right-log');
-        $('.register-show').addClass('show-log-panel');
-        $('.login-show').removeClass('show-log-panel');
-        
-    }
-    else if($('#log-reg-show').is(':checked')) {
-        $('.register-info-box').fadeIn();
-        $('.login-info-box').fadeOut();
-        
-        $('.white-panel').removeClass('right-log');
-        
-        $('.login-show').addClass('show-log-panel');
-        $('.register-show').removeClass('show-log-panel');
-    }
-});
+  <section class="engine"><a href="https://mobirise.info/n">simple site templates</a></section><script src="assets/popper/popper.min.js"></script>
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script async src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script async src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script async src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+  <script async src="assets/tether/tether.min.js"></script>
+  <script async src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script async src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script async src="assets/theme/js/script.js"></script>
   
-
-</script>
+  
+ <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden">
   </body>
 </html>
