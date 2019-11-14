@@ -7,26 +7,40 @@ if(!isset($_SESSION['unn']))
 {
 header("Location: ../index.html");
 }
-if(isset($_POST['Save']) && $_POST['coursename'] !=""){
+if(isset($_POST['Save']) && $_POST['campName'] !=""){
   
-  $coursecode     = $_POST['coursecode'];
+  $campVenue     = $_POST['campVenue'];
   
-  $coursename     = $_POST['coursename'];
+  $campName     = $_POST['campName'];
+//   $new_date = date('Y-m-d', strtotime($_POST['dateFrom']));
+  $dateStart       = date("Y-m-d",strtotime($_POST['examdatestart']));
   
-  $examdate       = date("Y-m-d");
+  $datEend       = date("Y-m-d",strtotime($_POST['examdateend']));
   
-  $examlocation   = $_POST['examlocation'];
+  $campDetails   = $_POST['campDetails'];
+  
+  $quantity = $_POST['quantity'];
+
+  $price = $_POST['price'];
 
 
-  $query = "INSERT INTO coursedetails(coursecode,course_name, exam_date, exam_location)
-   VALUES('$coursecode','$coursename','$examdate','$examlocation')";
+
+  $query = "INSERT INTO coursedetails (camp_venue, camp_name, dateStart , dateEnd, camp_details, MaxParticipant, price)
+   VALUES('$campVenue','$campName','$dateStart','$datEend','$campDetails', $quantity, $price)";
 
    $q = mysqli_query($con,$query);
-   
+ 
    if($q){
       echo "<script>alert('Homework Added Successfully;')</script>";
       echo "<script>window.location='assingment.php'</script>";
+   }else{
+    $error = addslashes(mysqli_error($con));
+        echo "<script>alert('An Error occur: {$error} ');</script>";
    }
+  
+   
+
+
 }
 ?>
 
@@ -109,7 +123,7 @@ if(isset($_POST['Save']) && $_POST['coursename'] !=""){
 <br>
 
 <div class="container">
-        <center><h1 class="col-sm-offset-2">Add Student's Homework</h1>
+        <center><h1 class="col-sm-offset-2">Add Student's Camp</h1>
 </div>
 <br><br>
             <!-- ============================================================== -->
@@ -134,7 +148,7 @@ if(isset($_POST['Save']) && $_POST['coursename'] !=""){
  <div class="form-group m-b-20">
 <h4 class="m-b-30 m-t-0 header-title"><b>Camp Venue</b></h4><br> 
 
-                                   <select class="select form-control" id="coursecode" name="coursecode" required="" placeholder="Venue">
+                                   <select class="select form-control" id="campVenue" name="campVenue" required="" placeholder="Venue">
                                    
 								   <option value="Port Dickson">
 								   Port Dickson
@@ -150,7 +164,7 @@ if(isset($_POST['Save']) && $_POST['coursename'] !=""){
  <div class="form-group m-b-20">
 <h4 class="m-b-30 m-t-0 header-title"><b>Camp Name</b></h4><br> 
 
-                                   <select class="select form-control" id="coursename" name="coursename" required="" placeholder="CAMP">
+                                   <select class="select form-control" id="campName" name="campName" required="" placeholder="CAMP">
                                    
 								   <option value="MOTIVATIONAL CAMP">
                                     MOTIVATIONAL CAMP
@@ -175,7 +189,7 @@ if(isset($_POST['Save']) && $_POST['coursename'] !=""){
 <div class="col-sm-12">
  <div class="card-box">
 <h4 class="m-b-30 m-t-0 header-title"><b>Details</b></h4><br> 
-<textarea class="form-control" name="examlocation" id="examlocation" required></textarea>
+<textarea class="form-control" name="campDetails" id="campDetails" required></textarea>
 </div>
 </div>
 </div>
@@ -184,14 +198,43 @@ if(isset($_POST['Save']) && $_POST['coursename'] !=""){
 <div class="row">
 <div class="col-sm-12">
  <div class="card-box">
-<h4 class="m-b-30 m-t-0 header-title"><b>Camp Date </b></h4><br> 
-<input type="date" name="examdate" id="examdate" class="form-control" required="" placeholder="Camp Date">
+<h4 class="m-b-30 m-t-0 header-title"><b>Camp Date Start</b></h4><br> 
+<input type="date" name="examdatestart" id="examdatestart" class="form-control" required="" placeholder="Camp Date Start">
 
 </div>
 </div>
 </div>
+<br>
+<div class="row">
+<div class="col-sm-12">
+ <div class="card-box">
+<h4 class="m-b-30 m-t-0 header-title"><b>Camp Date End</b></h4><br> 
+<input type="date" name="examdateend" id="examdateend" class="form-control" required="" placeholder="Camp Date End">
 
+</div>
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-sm-12">
+ <div class="card-box">
+<h4 class="m-b-30 m-t-0 header-title"><b>Camp Max Participant </b></h4><br> 
+<input type="text" name="quantity" id="quantity" placeholder="Max Participant" required="" class="form-control" />
+</div>
+</div>
+</div>
 <br><br>
+<div class="row">
+<div class="col-sm-12">
+ <div class="card-box">
+<h4 class="m-b-30 m-t-0 header-title"><b>Price</b></h4><br> 
+<input type="text" name="price" id="price" placeholder="Max Participant" required="" class="form-control" />
+
+</div>
+</div>
+</div>
+
+<br>
 <center>
   <div class="col-md-12 input-group-btn align-center">
         <input type="submit" name="Save" value="Add New " class="btn btn-primary btn-form display-4"  />

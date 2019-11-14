@@ -6,9 +6,9 @@ if(!isset($_SESSION['parentId']))
 {
 header("Location: ../index.html");
 }
-  if(isset($_REQUEST['course_id']) && $_REQUEST['course_id'] !=""){
-    $course_id= $_REQUEST['course_id'];
-    $query = "DELETE FROM coursedetails WHERE course_id =".$course_id;
+  if(isset($_REQUEST['camp_id']) && $_REQUEST['camp_id'] !=""){
+    $camp_id= $_REQUEST['camp_id'];
+    $query = "DELETE FROM coursedetails WHERE camp_id =".$camp_id;
     $delcouse= mysqli_query($conn,$query);
     if($delcouse){
         echo "<script>window.location='exam-list.php'</script>";
@@ -95,14 +95,18 @@ header("Location: ../index.html");
           <th>NO</th>
 		  <th>PLACE</th>
           <th>CAMP NAME</th>
+          <th>PRICE</th>
+          <th>CAMP DATE START</th>
+          <th>CAMP DATE END</th>
           <th>DETAIL</th>
-		  <th>CAMP DATE</th>
+          
+          <th>Pick</th>
           
         </tr>
         </thead>
         <tbody>
           <?php 
-          $query = "SELECT * FROM coursedetails ORDER BY coursecode ASC";
+          $query = "SELECT * FROM coursedetails ORDER BY dateStart ASC";
           $result = mysqli_query($con,$query);
           $sn=1;
           while($row = mysqli_fetch_assoc($result)) {
@@ -110,14 +114,19 @@ header("Location: ../index.html");
           <tr>
             <td><?php echo $sn; ?></td>
 			
-			<td><?php echo $row['coursecode']; ?></td>
+			<td><?php echo $row['camp_venue']; ?></td>
             
-            <td><?php echo $row['course_name']; ?></td>
+            <td><?php echo $row['camp_name']; ?></td>
         
-            <td><?php echo $row['exam_location']; ?></td>  
+            <td><?php echo $row['price']; ?></td>  
 			
-			<td><?php echo $row['exam_date']; ?></td>
-       
+            <td><?php echo $row['dateStart']; ?></td>
+
+            <td><?php echo $row['dateEnd']; ?></td>  
+			
+            <td><?php echo $row['camp_details']; ?></td>
+            
+            <td><a class="navbar-buttons mbr-section-btnr" href="beforePayment.php?camp_id=<?php echo $row['camp_id']?>">Select</a></td>
            
           </tr>
 
