@@ -83,7 +83,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
             
-            // Set parameters
+            // Set parameter for username and password
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
             
@@ -136,7 +136,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>    
 </body>
 </html>
-— The output of the above example (i.e. si
+â€” The output of the above example (i.e. si
 
 
 	</html>
