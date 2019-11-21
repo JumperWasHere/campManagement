@@ -89,7 +89,7 @@
     Email.send({
             Host: "smtp.gmail.com",
             Username: "ariffnaj@gmail.com",
-            Password: "@riffjumper94",
+            Password: "Password",
             To: 'ariffnaj2@gmail.com',
             From: "ariffnaj@gmail.com",
             Subject: "Mtour Purchase Receipt ",
